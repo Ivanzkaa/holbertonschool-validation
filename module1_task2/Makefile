@@ -9,4 +9,4 @@ post:
 	sed -i '2s/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
 
 help:
-	cat Makefile | grep '##' | re -d '##'
+	cat Makefile | grep '##' | tr -d '##'
